@@ -4,4 +4,4 @@ sqlparse==0.4.4
 altgraph==0.17.2
 asgiref==3.7.2
 pytz==2025.2
-tzdata==2025.7
+tzdata

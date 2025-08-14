@@ -1,0 +1,135 @@
+/* General body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Center container */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Individual post card */
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.post:hover {
+    transform: scale(1.01);
+}
+
+/* Post title links */
+.post a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.post a:hover {
+    color: #3498db;
+}
+
+/* Post date */
+.post small {
+    color: #7f8c8d;
+    font-size: 0.9em;
+}
+
+/* HR styling */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    form, .post {
+        padding: 15px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    form button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+/* Post detail page styling */
+.post-content {
+    background-color: #fff;
+    padding: 25px;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.post-date {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: #2980b9;
+}

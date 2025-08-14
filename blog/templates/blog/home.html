@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+</head>
+<body>
+<div class="container">
+
+    <h1>{{ title }}</h1>
+    <p>Welcome to Django, buddy 👋</p>
+
+    <!-- Add Post Form -->
+    <h2>Add a New Post</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Post</button>
+    </form>
+
+    <hr>
+
+    <!-- Blog Posts List -->
+    <h2>Blog Posts</h2>
+    {% for post in posts %}
+        <div class="post">
+            <h3><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h3>
+            <p>{{ post.content|truncatewords:20 }}</p>
+            <small>Created at: {{ post.created_at }}</small>
+        </div>
+    {% empty %}
+        <p>No posts yet.</p>
+    {% endfor %}
+
+</div>
+</body>
+</html>

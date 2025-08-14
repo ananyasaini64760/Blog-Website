@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-!^%5atff+7a!b&q6a@0k5jh1w$sa5lsyz^0%)%!s-2e5ev6qki
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['the-daily-escape', '127.0.0.1']
+ALLOWED_HOSTS = ['the-daily-escape-blog.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
